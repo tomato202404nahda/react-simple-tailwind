@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App w-full max-w-full">
+        <h1 className="text-3xl font-bold underline nanum">Hello world!</h1>
+      </div>
+      <div className="flex flex-col md:flex-row">
+        <img
+          className="max-w-1/2 h-auto"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Irbis4.JPG"
+          alt=""
+        />
+        <img
+          className="max-w-1/2 h-auto"
+          src="https://i0.wp.com/snowleopard.org/wp-content/uploads/2023/10/SnowLeopardTrust_Mongolia-6.jpg"
+          alt=""
+        />
+      </div>
+    </>
   );
 }
 
